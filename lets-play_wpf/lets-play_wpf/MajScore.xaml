@@ -5,12 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:lets_play_wpf"
         mc:Ignorable="d"
-        Title="MajScore" Height="450" Width="800">
+        Title="MajScore" Height="450" Width="800" Loaded="Window_Loaded" >
     <Grid>
         <StackPanel Margin="12">
-            <TextBox  Text="Prenom" Width="150" Margin="0 10 0 10"/>
-            <TextBox Text="Score" Width="60" Margin="0 10 0 10"/>
-            <Button Content="Mettre à jour" Width="110" Margin="0 10 0 10"/>
+            <TextBox x:Name="txtbPrenom"  Text="Prenom" Width="150" Margin="0 10 0 10"/>
+            <TextBox x:Name="txtbScore" Text="Score" Width="60" Margin="0 10 0 10"/>
+            <Button x:Name="btnUpdateElement" Content="Mettre à jour" Width="110" Margin="0 10 0 10" Click="Button_Click"/>
         </StackPanel>
     </Grid>
 </Window>

@@ -5,17 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:lets_play_wpf"
         mc:Ignorable="d"
-        Title="Jeu" Height="450" Width="800">
+        Title="Jeu" Height="450" Width="800" Loaded="Window_Loaded">
     <Grid Margin="12">
         <StackPanel>
-            <TextBox x:Name="txtCharacter" Text="" Width="50" Margin="0 10 0 10"/>
-            <Button x:Name="btnPlay"  Content="Jouer" Width="100" Margin="0 10 0 10"/>
-            <TextBlock x:Name="txtblMotMystere" Text="Mystere a trouver" Width="250" Margin="0 10 0 10"/>
-            <TextBlock x:Name="txtblWin" Text="Bravo vous avez réussi à trouver le mot mystère !" Width="270" Margin="0 10 0 10"/>
-            <TextBox x:Name="txtbPrenom" Text="Prenom" Width="150" Margin="0 10 0 10"/>
-            <TextBox x:Name="txtbScore" Text="Score" Width="60" Margin="0 10 0 10"/>
-            <Button x:Name="btnRegister" Content="Enregistrer" Width="100" Margin="0 10 0 10" Padding="5"/>
-            <Button x:Name="btnExit" Content="Quitter" Width="100" Margin="0 10 0 10" Padding="5"/>
+            <TextBox x:Name="txtCharacter" Text="" Height="25" Width="25" Margin="0 10 0 10"/>
+            <Button x:Name="btnPlay"  Content="Jouer" Width="100" Margin="0 10 0 10" Click="btnPlay_Click"/>
+            <TextBlock x:Name="txtblMotMystere" Text="Mystere a trouver" Width="350" Margin="0 10 0 10" FontSize="30px" VerticalAlignment="Center"/>
+            <TextBlock x:Name="txtblWin" Text="Bravo vous avez réussi à trouver le mot mystère !" Width="380" Margin="0 10 0 10" Visibility="Hidden" VerticalAlignment="Center" FontSize="15px"/>
+            <TextBox x:Name="txtbPrenom" Text="Prenom" Width="150" Margin="0 10 0 10" Visibility="Hidden"/>
+            <TextBox x:Name="txtbScore" Text="Score" Width="60" Margin="0 10 0 10" Visibility="Hidden" IsReadOnly="True"/>
+            <Button x:Name="btnRegister" Content="Enregistrer" Width="100" Margin="0 10 0 10" Padding="5" Click="btnRegister_Click" ScrollViewer.VerticalScrollBarVisibility="Hidden" Visibility="Hidden"/>
+            <Button x:Name="btnExit" Content="Quitter" Width="100" Margin="0 10 0 10" Padding="5" Click="btnExit_Click"/>
         </StackPanel>
     </Grid>
 </Window>
