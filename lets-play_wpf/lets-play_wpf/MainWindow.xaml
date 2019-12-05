@@ -6,7 +6,20 @@
         xmlns:local="clr-namespace:lets_play_wpf"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+    <Grid Margin="12" >
+        <StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <TextBox x:Name="txtMoMystere" Text="Mot a trouver" Margin="0 0 40 0" Width="120"/>
+                <CheckBox x:Name="cbRevision" Content="Revision" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Height="50" Margin="0 30 0 30">
+                <Button  x:Name="btnPendu" Content="Pendu" Margin="1 1 50 1" Padding="5" Width="100" Click="btnPendu_Click"/>
+                <Button  x:Name="btnBescherelle" Content="Bescherelle" Padding="5" Width="100"/>
+            </StackPanel>
+            <TextBox x:Name="txtTableScores" Text="Tableau des scores" Margin="0 0 0 30" Height="100" />
+            <Button x:Name="btnLoadFile" Content="Charger un fichier" Height="30" Width="150" Margin="0 0 0 10"/>
+            <Button x:Name="btnUpdateScore" Content="Mettre à jour un score" Height="30" Width="150" Margin="0 0 0 10"/>
+            <Button x:Name="btnDeleteDatabase" Content="Supprimer la base de donnée" Height="30" Width="170" Margin="0 0 0 10"/>
+        </StackPanel>
     </Grid>
 </Window>

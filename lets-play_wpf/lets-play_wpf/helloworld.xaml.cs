@@ -10,25 +10,24 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace lets_play_wpf
 {
     /// <summary>
-    /// Logique d'interaction pour MainWindow.xaml
+    /// Logique d'interaction pour helloworld.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class helloworld : Window
     {
-        public MainWindow()
+        public helloworld()
         {
             InitializeComponent();
         }
 
-        private void btnPendu_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
             this.Hide();
-            helloworld window = new helloworld();
+            MainWindow window = new MainWindow();
             window.Show();
         }
     }
